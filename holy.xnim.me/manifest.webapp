@@ -1,0 +1,17 @@
+{
+  "name": "FPSChecker",
+  "role": "custom",
+  "description": "FPS Checker",
+  "launch_path": "/index.html",
+  "manifestURL": "app://holy.xnim.me/manifest.webapp",
+  "permissions": {},
+  "locales": {
+    "en-US": { "name": "FPS checker", "description": "FPS Checker" },
+    "ru-RU": { "name": "FPS checker", "description": "FPS Checker" }
+  },
+  "default_locale": "en-US",
+  "icons": {
+    "126": "/icon.png"
+  },
+  "version": "1.0"
+}

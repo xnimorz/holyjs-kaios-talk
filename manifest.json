@@ -1,0 +1,62 @@
+{
+  "name": "Example",
+  "description": "EXAMPLE",
+  "launch_path": "/index.html",
+  "permissions": {
+    "flashlight": {},
+    "themeable": {},
+    "alarms": {},
+    "browser": {},
+    "power": {},
+    "fmradio": {},
+    "mobileconnection": {},
+    "kaios-accounts": {},
+    "bluetooth": {},
+    "telephony": {},
+    "voicemail": {},
+    "contacts": { "access": "readonly" },
+    "settings": { "access": "readwrite" },
+    "storage": {},
+    "camera": {},
+    "geolocation": {},
+    "audio-capture": {},
+    "video-capture": {},
+    "wifi-manage": {},
+    "desktop-notification": {},
+    "idle": {},
+    "network-events": {},
+    "volumemanager": {},
+    "cellbroadcast": {},
+    "input-manage": {},
+    "nfc": {},
+    "downloads": {},
+    "sms": {},
+    "softkey": {},
+    "device-storage:sdcard": { "access": "readwrite" },
+    "device-storage:pictures": { "access": "readwrite" },
+    "device-storage:videos": { "access": "readwrite" },
+    "device-storage:music": { "access": "readcreate" },
+    "device-storage:apps": { "access": "readonly" }
+  },
+  "locales": {
+    "en-US": { "name": "EXAMPLE", "description": "EXAMPLE" }
+  },
+  "default_locale": "en-US",
+  "icons": {
+    "128": "/icon.png"
+  },
+  "activities": {
+    "view": {
+      "filters": {
+        "type": "url",
+        "url": {
+          "required": true,
+          "pattern": "(https?:).{1,100500}",
+          "patternFlags": "i"
+        }
+      }
+    }
+  },
+  "messages": [{ "get-message": "/handle-message.html" }],
+  "version": "1.0"
+}
